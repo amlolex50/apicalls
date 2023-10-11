@@ -13,7 +13,7 @@ WORKDIR /app
 ADD . /app
 
 # Install necessary packages, Flask and ffmpeg-python
-RUN pip install --no-cache-dir flask werkzeug ffmpeg-python requests gunicorn scipy
+RUN pip install --no-cache-dir flask werkzeug ffmpeg-python requests gunicorn scipy python-pptx PyPDF2 cloudconvert python-docx firebase-admin openai google-cloud-secret-manager google-cloud-firestore qrcode[pil]
 
 # Make port 5000 available to the world outside this container
 # EXPOSE 5000
